@@ -1,0 +1,23 @@
+<!--pages/view/view.wxml-->
+<!-- 1.view的基本使用 -->
+<view class='box'>这是一个view组件</view>
+<view>这是另一个view组件</view>
+
+<!-- 2.hover-class:当用户按下组件时，显示的样式 -->
+<view class='box1' 
+      hover-class='hover-view'
+      hover-stay-time='500'
+      hover-start-time='400'>
+  box1
+</view>
+
+<!-- 3.hover-stop-propagation: 是否阻止祖先结点的点击态显示 -->
+<view class='box2' hover-class='box2-hover'>
+  <view class='box1' 
+      hover-class='hover-view'
+      hover-stay-time='500'
+      hover-start-time='400'
+      hover-stop-propagation>
+    box1
+  </view>
+</view>
